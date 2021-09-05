@@ -204,6 +204,28 @@
   });
   $('.testimonials .inner-wrap').on('afterChange', function(event, slick, currentSlide, nextSlide){
     $(slick.$slider).find(".slick-arrow").removeClass('move');
-  });      
+  });     
+  
+  
+  let standardStickyHeader = {
+        init : function() {            
+            this._events();
+        },
+        scrolling : function() {
+            let scrollPosition = $(this).scrollTop();
+
+            if(scrollPosition >= 300){
+                $('header').addClass('smoll');
+            }else{
+                $('header').removeClass('smoll');
+            }
+        },
+        _events : function() {
+            $(window).on('scroll', this.scrolling );
+        }
+    }
+    standardStickyHeader.init();
+
+
 </script>
 </html>
