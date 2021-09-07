@@ -103,10 +103,10 @@ main .banner .slider {
     right: 0;
     bottom: 0;
 
-    max-width: 1800px;
+
     background-position: bottom center;
     margin: 0 auto;
-    background-size: 220%;
+    background-size: 250%;
 }
 main .banner .obj {
     position: absolute;
