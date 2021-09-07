@@ -32,15 +32,39 @@ main {
     margin: 0;
     padding-left: 0;
 }
-.main-nav li {
+.main-nav > li {
     list-style: none;
     display: inline-block;
     margin-right: 25px;
     position: relative;
+    padding: 15px 0;
     
 }
 .main-nav li:last-of-type {
     margin-right: 0;
+}
+.main-nav li ul {
+    position: absolute;
+    background: #fff;
+    top: 45px;
+    left: -19px;
+    width: 113px;
+    padding: 11px 15px;
+    border-radius: 6px;
+    border: 2px solid #00539a;
+    display: none;
+}
+.main-nav li ul li a {
+    color: #00539a;
+}
+.main-nav li:hover ul {
+    display: block;
+}
+.main-nav li ul li {
+    display: block;
+}
+.main-nav li ul li a {
+
 }
 .main-nav li a {
     display: inline-block;
